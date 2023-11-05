@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  overflow-x: hidden;
+  /* background: #313131; */
+}
+
+#Text_ {
+  margin: 1em 0 1em;
+}
+
+.Text {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+  color: #17a6ff;
+  text-transform: capitalize;
+  margin: 1em 0 0;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #17a6ff 0%,
+    #ff26b7 100%,
+    #4fd3ff 20%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  @media (max-width: 800px) {
+    font-size: 3.5em;
+  }
+  @media (max-width: 520px) {
+    font-size: 3em;
+  }
+  & span.question {
+    position: absolute;
+    transform: translate(-0%, -50%);
+    font-size: 2.5em;
+  }
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* background: hsla(206, 100%, 67%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(206, 100%, 67%, 1) 0%,
+    hsla(212, 68%, 35%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(206, 100%, 67%, 1) 0%,
+    hsla(212, 68%, 35%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(206, 100%, 67%, 1) 0%,
+    hsla(212, 68%, 35%, 1) 100%
+  ); */
+
+  box-shadow: -1px 3px 37px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 3px 37px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 37px 0px rgba(0, 0, 0, 0.75);
+
+  & img {
+    border-radius: 2.7em;
+    padding: 2em;
+    width: 50%;
+
+    @media (max-width: 800px) {
+      width: 70%;
+    }
+    @media (max-width: 520px) {
+      width: 80%;
+    }
+  }
+}
+
+.Fac {
+  width: 100%;
+  .header {
+    width: 100%;
+    font-size: 1.7em;
+    margin: 1em 1.5em 0;
+  }
+  .boxDescribe {
+    width: 100%;
+    display: flex;
+    padding: 0 1.5em;
+    & p {
+      width: 90%;
+      line-height: 1.6em;
+      letter-spacing: 0.04em;
+      @media (max-width: 800px) {
+        width: 90%;
+      }
+      @media (max-width: 520px) {
+        width: 80%;
+      }
+    }
+    & span {
+      font-style: italic;
+    }
+
+    @media (max-width: 800px) {
+      display: flex;
+      align-items: center;
+
+      flex-direction: column;
+    }
+    @media (max-width: 520px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    @media (max-width: 800px) {
+      padding: 0 0;
+    }
+    @media (max-width: 520px) {
+      padding: 0 0;
+    }
+  }
+}
+
+.dataFrame {
+  .frame {
+    margin: 4em 0;
+  }
+}
